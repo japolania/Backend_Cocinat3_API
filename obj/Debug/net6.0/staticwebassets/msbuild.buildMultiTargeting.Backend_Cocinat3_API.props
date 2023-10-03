@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Backend_Cocinat3_API.props" />
+</Project>
