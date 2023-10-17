@@ -7,14 +7,10 @@ namespace Backend_Cocinat3_API.Controllers
     {
         [HttpGet]
         [Route("/api/[controller]/GetPublicacion")]
-        public IEnumerable<WeatherForecast> GetPublicaciones()
+        public ActionResult GetPubllicacion()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-            })
-            .ToArray();
+
+            return Ok();
         }
     }
 }
