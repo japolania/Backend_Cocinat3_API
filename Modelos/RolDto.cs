@@ -4,7 +4,7 @@
     {
         public int IdRol { get; set; }
         public string Nombre { get; set; }
-        public List<UsuarioDto> Usuario { get; set; }
+        public List<UsuarioModelo> Usuario { get; set; }
 
     }
 }

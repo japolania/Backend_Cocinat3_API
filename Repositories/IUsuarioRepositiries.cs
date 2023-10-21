@@ -4,11 +4,11 @@ namespace Backend_Cocinat3_API.Repositories
 {
     public interface IUsuarioRepositiries
     {
-        Task<UsuarioDto> CrearUsuario(UsuarioDto usuario);
-        Task<UsuarioDto> ActualizarUsuario(UsuarioDto usuario);
+        Task<UsuarioModelo> CrearUsuario(UsuarioModelo usuario);
+        Task<UsuarioModelo> ActualizarUsuario(UsuarioModelo usuario);
         Task<bool> EliminarUsuario(int id);
-        Task<List<UsuarioDto>> MostrarUsuario();
-        Task<UsuarioDto> VerUsuario(int id);
+        Task<List<UsuarioModelo>> MostrarUsuario();
+        Task<UsuarioModelo> VerUsuario(int id);
         Task<int> login(string correo, string clave);
     }
 }

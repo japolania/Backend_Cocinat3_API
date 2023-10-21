@@ -30,3 +30,9 @@ D:\7to_Semestre\SoftII\Backend_Cocinat3_API\obj\Debug\net6.0\refint\Backend_Coci
 D:\7to_Semestre\SoftII\Backend_Cocinat3_API\obj\Debug\net6.0\Backend_Cocinat3_API.pdb
 D:\7to_Semestre\SoftII\Backend_Cocinat3_API\obj\Debug\net6.0\Backend_Cocinat3_API.genruntimeconfig.cache
 D:\7to_Semestre\SoftII\Backend_Cocinat3_API\obj\Debug\net6.0\ref\Backend_Cocinat3_API.dll
+D:\7to_Semestre\SoftII\Backend_Cocinat3_API\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\7to_Semestre\SoftII\Backend_Cocinat3_API\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\7to_Semestre\SoftII\Backend_Cocinat3_API\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\7to_Semestre\SoftII\Backend_Cocinat3_API\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\7to_Semestre\SoftII\Backend_Cocinat3_API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\7to_Semestre\SoftII\Backend_Cocinat3_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
