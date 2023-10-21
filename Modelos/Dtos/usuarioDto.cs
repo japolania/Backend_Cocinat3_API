@@ -12,7 +12,7 @@ namespace Backend_Cocinat3_API.Modelos.Dtos
         var lista =new List<UsuarioModelo>();
             using (var sql = new SqlConnection(cn.cadenaSQL()))
             {
-            using(var cmd =new SqlCommand("mostrarProductos", sql))
+            using(var cmd =new SqlCommand("mostrarUsuarios", sql))
                 {
                 await sql.OpenAsync();
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
