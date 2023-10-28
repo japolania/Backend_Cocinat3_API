@@ -1,5 +1,6 @@
 ﻿using Backend_Cocinat3_API.conexion;
 using Backend_Cocinat3_API.Dtos;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace Backend_Cocinat3_API.Modelos.Dtos
@@ -30,6 +31,24 @@ namespace Backend_Cocinat3_API.Modelos.Dtos
                         }
                     }
                 return lista;
+                }
+            }
+        }
+    public async Task insertarUsuarios(UsuarioModelo parametros)
+        {
+        using(var sql = new SqlConnection(cn.cadenaSQL()))
+            {
+            using (var cmd = new SqlCommand("insertarUsuarios", sql))
+                {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nombre", parametros.nombre);
+                cmd.Parameters.AddWithValue("@apellido", parametros.apellido);
+                cmd.Parameters.AddWithValue("@telefono", parametros.telefono);
+                cmd.Parameters.AddWithValue("@email", parametros.email);
+                cmd.Parameters.AddWithValue("@contrasema", parametros.contrasena);
+                cmd.Parameters.AddWithValue("@nacionalidad", parametros.nacionalidad);
+
+                await cmd.ExecuteNonQueryAsync();
                 }
             }
         }

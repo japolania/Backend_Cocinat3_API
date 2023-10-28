@@ -17,11 +17,13 @@ namespace Backend_Cocinat3_API.Controllers
         var lista = await funcion.mostrarUsuarios();
         return lista;
         }
+
        [HttpPost("postUser")]
-        public ActionResult PostUsuario()
+        public async Task post([FromBody]UsuarioModelo parametros)
         {
             // Lógica para crear un usuario
-            return Ok();
+        var funcion= new usuarioDto();
+        await funcion.insertarUsuarios(parametros);
         }
 
         [HttpPut("putUser")]
